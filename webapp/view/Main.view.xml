@@ -1,0 +1,28 @@
+<mvc:View controllerName="dh.fs.wschallenge.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page id="page" title="{i18n>title}">
+    <Table items="{/items}">
+      <columns>
+        <Column>
+          <Label text="Name" />
+        </Column>
+        <Column>
+          <Label text="Times used" />
+        </Column>
+        <Column>
+          <Label text="Template" />
+        </Column>
+      </columns>
+      <items>
+        <ColumnListItem>
+          <cells>
+            <Text text="{name}" />
+            <Text text="{captions}" />
+            <Button text="Show Preview" icon="sap-icon://show" press="openPreview" />
+          </cells>
+        </ColumnListItem>
+      </items>
+    </Table>
+  </Page>
+</mvc:View>

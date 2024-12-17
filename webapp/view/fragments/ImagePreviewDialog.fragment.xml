@@ -1,0 +1,6 @@
+<Dialog xmlns="sap.m" title="{name}">
+  <Image src="{url}" />
+  <buttons>
+    <Button press="onDialogClose" text="Close" />
+  </buttons>
+</Dialog>
